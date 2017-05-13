@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="JPMChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quO-1S-A7a">
+                                <rect key="frame" x="20" y="50" width="374" height="175"/>
+                                <string key="text">Enter grid below 
+1. Each element should be separated by comma, 
+2. Each line should separated by space. 
+3. Don't enter comma for the last element and 
+4. Don't enter space for the last line
+
+Example:
+51,51 0,51 51,51 5,5</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a valid grid using above instructions" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUi-rh-sud">
+                                <rect key="frame" x="20" y="245" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="yes" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RBW-5j-njm"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDS-47-h4K">
+                                <rect key="frame" x="156.66666666666669" y="305" width="100.00000000000006" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ff8-MZ-OHB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnGoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TkJ-zT-Adm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUc-Wc-Ljo">
+                                <rect key="frame" x="139" y="389" width="135" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="PNf-Cb-P4g"/>
+                                    <constraint firstAttribute="height" constant="100" id="bxP-x0-q0B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZUc-Wc-Ljo" firstAttribute="centerX" secondItem="QDS-47-h4K" secondAttribute="centerX" id="17g-Rs-NEq"/>
+                            <constraint firstItem="cUi-rh-sud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="4sQ-AM-X8g"/>
+                            <constraint firstItem="quO-1S-A7a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="GGA-lE-mdN"/>
+                            <constraint firstItem="QDS-47-h4K" firstAttribute="top" secondItem="cUi-rh-sud" secondAttribute="bottom" constant="30" id="Nm9-TH-nRJ"/>
+                            <constraint firstItem="QDS-47-h4K" firstAttribute="centerX" secondItem="cUi-rh-sud" secondAttribute="centerX" id="NzQ-Bm-qEK"/>
+                            <constraint firstAttribute="trailing" secondItem="quO-1S-A7a" secondAttribute="trailing" constant="20" id="QgY-6R-gKn"/>
+                            <constraint firstAttribute="trailing" secondItem="cUi-rh-sud" secondAttribute="trailing" constant="20" id="Y2j-VA-sW7"/>
+                            <constraint firstItem="quO-1S-A7a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Zgv-eR-Ufu"/>
+                            <constraint firstItem="ZUc-Wc-Ljo" firstAttribute="top" secondItem="QDS-47-h4K" secondAttribute="bottom" constant="50" id="oKl-Vs-9ae"/>
+                            <constraint firstItem="cUi-rh-sud" firstAttribute="top" secondItem="quO-1S-A7a" secondAttribute="bottom" constant="20" id="poV-kJ-hTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goButton" destination="QDS-47-h4K" id="gTK-4v-Gv2"/>
+                        <outlet property="inputTextField" destination="cUi-rh-sud" id="KDv-WM-glz"/>
+                        <outlet property="outputLabel" destination="ZUc-Wc-Ljo" id="Zqp-2I-Quf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>
