@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E2AA4F51EC7A736006B53F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E2AA4F31EC7A736006B53F5 /* Info.plist */; };
 		9E2AA5051EC7A917006B53F5 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AA4F41EC7A736006B53F5 /* MainViewControllerTests.swift */; };
+		9E2AA5091EC7B0E4006B53F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E2AA5081EC7B0E4006B53F5 /* Info.plist */; };
 		9E99D7B21EC3F7FD00874150 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99D7B11EC3F7FD00874150 /* Grid.swift */; };
 		9E99D7B41EC42DBB00874150 /* PathState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99D7B31EC42DBB00874150 /* PathState.swift */; };
 		9E99D7B61EC4318400874150 /* PathStateComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99D7B51EC4318400874150 /* PathStateComparator.swift */; };
@@ -36,6 +37,7 @@
 		9E2AA4F31EC7A736006B53F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2AA4F41EC7A736006B53F5 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		9E2AA4FB1EC7A907006B53F5 /* PathOfLowerCostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathOfLowerCostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E2AA5081EC7B0E4006B53F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E99D7B11EC3F7FD00874150 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		9E99D7B31EC42DBB00874150 /* PathState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathState.swift; sourceTree = "<group>"; };
 		9E99D7B51EC4318400874150 /* PathStateComparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathStateComparator.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 		9EF3848C1EC2BFC8003FBDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EF3848E1EC2BFC8003FBDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EF384911EC2BFC8003FBDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9EF384931EC2BFC8003FBDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = PathOfLowerCost/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +119,7 @@
 				9EF3848B1EC2BFC8003FBDA8 /* Main.storyboard */,
 				9EF3848E1EC2BFC8003FBDA8 /* Assets.xcassets */,
 				9EF384901EC2BFC8003FBDA8 /* LaunchScreen.storyboard */,
-				9EF384931EC2BFC8003FBDA8 /* Info.plist */,
+				9E2AA5081EC7B0E4006B53F5 /* Info.plist */,
 			);
 			path = PathOfLowerCost;
 			sourceTree = "<group>";
@@ -216,6 +217,7 @@
 				9E2AA4F51EC7A736006B53F5 /* Info.plist in Resources */,
 				9EF384921EC2BFC8003FBDA8 /* LaunchScreen.storyboard in Resources */,
 				9EF3848F1EC2BFC8003FBDA8 /* Assets.xcassets in Resources */,
+				9E2AA5091EC7B0E4006B53F5 /* Info.plist in Resources */,
 				9EF3848D1EC2BFC8003FBDA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +431,7 @@
 				9E2AA5041EC7A907006B53F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EF3847F1EC2BFC7003FBDA8 /* Build configuration list for PBXProject "PathOfLowerCost" */ = {
 			isa = XCConfigurationList;
